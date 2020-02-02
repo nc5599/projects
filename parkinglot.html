@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PARKING LOT</title>
+
+	<style type="text/css">
+		
+		div{
+
+		}
+	</style>
+</head>
+<body bgcolor="black">
+
+	<center>
+
+	<div >
+
+
+
+		<table border="2px" bgcolor="white">
+
+			<col width="130">
+			<col width="130">
+
+			<tr>
+				<th>OCCUPIED</th>
+				<th> VACANT </th>
+	<tr>
+		<td valign="middle" align="center"><h1><font color="red" id="occupied">19</font></h1></td>
+	<td valign="middle" align="center"><h1><font color="green" id="vacant">1</font></h1></td>
+
+</tr>
+
+<tr>
+	<td colspan="2" valign="middle" align="center"><button onclick="increment()">GET NEW TICKET</button></td></tr>
+
+</table>
+
+    </div>
+
+</center>
+
+<script type="text/javascript">
+	
+	function increment() {
+
+		var a=Number(document.getElementById("occupied").innerHTML);
+		a=a+1
+
+		if (a>20)
+		{
+			alert("NO MORE SPACE LEFT")
+		}
+
+		else
+
+
+		{document.getElementById("occupied").innerHTML=a;
+				document.getElementById("vacant").innerHTML=20-a;
+				alert("Choose Empty Spot closest to you")}
+
+
+		// body...
+	}
+</script>
+</body>
+</html>
