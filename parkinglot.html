@@ -5,14 +5,27 @@
 
 	<style type="text/css">
 		
-		div{
+		div{ margin-top: 270px;
+
 
 		}
+
+		table{
+			border:solid 20px green;
+			outline: dashed 30 px white;
+		}
+
+		td.pl{
+			font-size: 30px;
+		}
+
 	</style>
 </head>
 <body bgcolor="black">
 
 	<center>
+
+		
 
 	<div >
 
@@ -20,15 +33,18 @@
 
 		<table border="2px" bgcolor="white">
 
-			<col width="130">
-			<col width="130">
+			<col width="250">
+			<col width="250">
+			<tr>
+				<td align="center" colspan="2" class="pl"> PARKING LOT DASHBOARD </td>
+			</tr>
 
 			<tr>
 				<th>OCCUPIED</th>
 				<th> VACANT </th>
 	<tr>
-		<td valign="middle" align="center"><h1><font color="red" id="occupied">19</font></h1></td>
-	<td valign="middle" align="center"><h1><font color="green" id="vacant">1</font></h1></td>
+		<td class="pl" valign="middle" align="center"><h1><font color="red" id="occupied">16</font></h1></td>
+	<td class="pl" valign="middle" align="center"><h1><font color="green" id="vacant">1</font></h1></td>
 
 </tr>
 
@@ -58,7 +74,7 @@
 
 		{document.getElementById("occupied").innerHTML=a;
 				document.getElementById("vacant").innerHTML=20-a;
-				alert("Choose Empty Spot closest to you")}
+				alert("You Have Been Assigned Parking Spot A")}
 
 
 		// body...
